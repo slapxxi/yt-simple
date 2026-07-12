@@ -18,17 +18,23 @@ export const Header = () => {
         <SearchInput />
 
         <div
-          className="grid grid-flow-col grid-cols-[0_0_0_40px] items-center 
-          gap-0 justify-self-end md:grid-cols-[26px_21px_22px_40px] md:gap-10"
+          className="grid grid-flow-col grid-cols-[0_0_0_40px] items-center gap-0 justify-self-end
+          *:cursor-pointer *:hover:opacity-60 md:grid-cols-[27px_21px_24px_40px] md:gap-10"
         >
-          <CamIcon />
-          <GridIcon />
-          <BellIcon className="col-3 row-1" />
+          <button>
+            <CamIcon />
+          </button>
+          <button>
+            <GridIcon />
+          </button>
+          <button className="col-3 row-1">
+            <BellIcon />
+          </button>
           <div
             className="col-3 row-1 hidden size-5 translate-x-1/2 -translate-y-1/2 place-items-center rounded-full
           bg-red-500  text-xs text-white md:inline-grid"
           >
-            3
+            <span className="-translate-x-px">3</span>
           </div>
           <Avatar src={userImage} />
         </div>
