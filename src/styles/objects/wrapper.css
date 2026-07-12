@@ -1,0 +1,8 @@
+@layer objects {
+  .wrapper {
+    display: grid;
+    grid-template-columns: [full header sidebar] auto [sidebar-end] 1fr [header-end full-end];
+    min-height: 100vh;
+    column-gap: 60px;
+  }
+}

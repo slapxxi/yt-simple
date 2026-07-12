@@ -1,0 +1,5 @@
+@layer base {
+  body {
+    @apply bg-white font-text dark:bg-xzinc-900 dark:text-white;
+  }
+}
