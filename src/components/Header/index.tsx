@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import BellIcon from '~/assets/bell-icon.svg?react'
 import CamIcon from '~/assets/cam-icon.svg?react'
 import GridIcon from '~/assets/grid-icon.svg?react'
@@ -36,7 +37,9 @@ export const Header = () => {
           >
             <span className="-translate-x-px">3</span>
           </div>
-          <Avatar src={userImage} />
+          <Link to="/user">
+            <Avatar src={userImage} />
+          </Link>
         </div>
       </div>
     </header>
