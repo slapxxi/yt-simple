@@ -1,3 +1,7 @@
+@utility area-* {
+  grid-area: --value([*]);
+}
+
 @utility text-fluid-sm {
   font-size: clamp(0.5rem, 0.409rem + 0.45vw, 0.75rem);
   line-height: var(--tw-leading, var(--text-sm--line-height) /* 1 */);

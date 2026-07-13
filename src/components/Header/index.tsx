@@ -9,7 +9,7 @@ import { Avatar, SearchInput } from '~/components'
 
 export const Header = () => {
   return (
-    <header className="col-[header] grid grid-cols-subgrid self-start px-5 py-5">
+    <header className="grid grid-cols-subgrid self-start py-5 area-[header]">
       <div className="flex gap-7">
         <MenuIcon className="w-5" />
         <Logo className="w-29" />
