@@ -1,28 +1,25 @@
-import Logo from '~/assets/logo.svg?react'
-import UserIcon from '~/assets/user-icon.svg?react'
 import config from './config'
 
-export const Header = () => {
+export const Sidebar = () => {
   return (
-    <header className="col-[wide] row-[header] flex items-center justify-between py-4 text-fluid-lg text-white">
-      <Logo />
-
-      <nav>
-        <ul className="flex items-center gap-x-10">
-          {config.nav.map((item) => (
-            <li key={item}>
-              <a href="#" className="font-bold">
-                {item}
+    <aside className="text-fluid-base area-[sidebar]">
+      <nav className="text-white/50">
+        <ul className="grid grid-rows-[auto_auto_minmax(64px,auto)] gap-7">
+          {config.nav.map((item, i) => (
+            <li key={item.label}>
+              <a
+                href="#"
+                className="grid grid-cols-[20px_1fr] items-center gap-4 
+                hover:text-white/80 data-[active=true]:text-red-500"
+                data-active={i === 0}
+              >
+                <item.Icon />
+                {item.label}
               </a>
             </li>
           ))}
         </ul>
       </nav>
-
-      <a href="#" className="flex gap-2.5 items-center">
-        <UserIcon className="size-5" />
-        <span>Account</span>
-      </a>
-    </header>
+    </aside>
   )
 }

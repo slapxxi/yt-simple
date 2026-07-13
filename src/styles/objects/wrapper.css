@@ -2,13 +2,14 @@
   .wrapper {
     display: grid;
     grid-template-columns:
-      [full] 1fr [header sidebar] auto [sidebar-end content] minmax(auto, 960px)
+      [full] 1fr [header sidebar] minmax(240px, auto)
+      [sidebar-end content] minmax(auto, 1040px)
       [header-end content-end] 1fr [full-end];
     grid-template-rows:
       [header]
       minmax(110px, auto)
       [header-end sidebar content] 1fr [sidebar-end content-end];
     min-height: 100vh;
-    column-gap: 60px;
+    column-gap: 16px;
   }
 }

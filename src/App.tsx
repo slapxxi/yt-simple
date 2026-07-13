@@ -1,10 +1,11 @@
 import { Outlet } from 'react-router'
-import { Header } from '~/components'
+import { Header, Sidebar } from '~/components'
 
 function App() {
   return (
     <div className="wrapper">
       <Header />
+      <Sidebar />
       <Outlet />
     </div>
   )
