@@ -4,7 +4,7 @@ import SettingsIcon from '~/assets/settings-icon.svg?react'
 
 export const Sidebar = () => {
   return (
-    <aside className="grid gap-y-7 self-start overflow-hidden pb-4 text-fluid-base text-white/50 area-[sidebar]">
+    <aside className="grid content-between gap-y-7 overflow-hidden pb-4 text-fluid-base text-white/50 area-[sidebar]">
       <nav>
         <ul className="grid grid-rows-[auto_auto_minmax(64px,auto)] gap-7">
           {config.nav.map((item, i) => (
