@@ -3,7 +3,7 @@
 }
 
 @utility text-fluid-sm {
-  font-size: clamp(0.5rem, 0.409rem + 0.45vw, 0.75rem);
+  font-size: clamp(0.5rem, 0.364rem + 0.68vw, 0.875rem);
   line-height: var(--tw-leading, var(--text-sm--line-height) /* 1 */);
 }
 
