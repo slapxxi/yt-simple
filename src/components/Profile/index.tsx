@@ -1,9 +1,11 @@
 import backdropImage from '~/assets/backdrop.jpg'
+import ChevronLeft from '~/assets/chevron-left-icon.svg?react'
+import ChevronRight from '~/assets/chevron-right-icon.svg?react'
 import coverImage from '~/assets/cover21.jpg'
 import DotIcon from '~/assets/dot-icon.svg?react'
 import SearchIcon from '~/assets/search-icon.svg?react'
 import userImage from '~/assets/user-2.jpg'
-import { Avatar, SearchInput } from '~/components'
+import { Avatar, SearchInput, VideoPreview } from '~/components'
 import config from './config'
 
 export const Profile = () => {
@@ -24,7 +26,7 @@ export const Profile = () => {
         </button>
       </div>
 
-      <div className="col-1 grid grid-cols-[2.4fr_1fr]">
+      <div className="col-1 grid grid-cols-[1fr_minmax(auto,280px)] gap-10">
         <div className="grid gap-14">
           <nav
             className="grid auto-cols-[fit-content(120px)_minmax(10px,40px)] grid-flow-col items-center gap-0 
@@ -96,11 +98,61 @@ export const Profile = () => {
           </div>
         </div>
 
-        <section className="ml-auto">
+        <section className="grid gap-7.5 self-start">
           <h3 className="title text-fluid-base dark:text-white/60">
             Recommended Channels
           </h3>
+
+          <nav className="grid gap-7.5">
+            {config.recommended.map((item, i) => (
+              <a
+                key={item.name}
+                href="#"
+                className="inline-grid gap-5 grid-cols-[50px_1fr] items-center"
+              >
+                <Avatar src={item.img} />
+                <span className="title text-fluid-lg">{item.name}</span>
+              </a>
+            ))}
+          </nav>
         </section>
+      </div>
+
+      <div className="flex items-center gap-4 col-1">
+        <div className="flex items-center gap-5">
+          <h2 className="title text-fluid-3xl">Margaret Phelps Videos</h2>
+        </div>
+
+        <div className="ml-auto flex items-center gap-2.5">
+          <button
+            className="inline-grid size-10 cursor-pointer place-items-center rounded-full p-2
+            dark:bg-white/10 dark:text-white/40
+            dark:hover:bg-white/20 dark:hover:text-white/60"
+          >
+            <ChevronLeft className="w-2 -translate-x-px" />
+          </button>
+          <button
+            className="inline-grid size-10 cursor-pointer place-items-center rounded-full p-2
+            dark:bg-white/10 dark:text-white/40
+            dark:hover:bg-white/20 dark:hover:text-white/60"
+          >
+            <ChevronRight className="w-2 translate-x-px" />
+          </button>
+        </div>
+      </div>
+
+      <div className="col-[content/full] grid auto-cols-[minmax(250px,1fr)] grid-flow-col gap-10 overflow-x-auto pb-4">
+        {config.videos.map((item, i) => (
+          <VideoPreview
+            author={item.author}
+            duration={item.duration}
+            img={item.img}
+            key={item.title}
+            published={item.published}
+            title={item.title}
+            views={item.views}
+          />
+        ))}
       </div>
     </div>
   )

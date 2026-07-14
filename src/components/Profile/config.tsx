@@ -1,18 +1,12 @@
-import cover1Image from '~/assets/cover.jpg'
-import cover2Image from '~/assets/cover2.jpg'
-import cover3Image from '~/assets/cover3.jpg'
-import cover4Image from '~/assets/cover4.jpg'
-import cover5Image from '~/assets/cover5.jpg'
-import cover6Image from '~/assets/cover6.jpg'
-import cover7Image from '~/assets/cover7.jpg'
-import cover8Image from '~/assets/cover8.jpg'
-import cover9Image from '~/assets/cover9.jpg'
-import cover10Image from '~/assets/cover10.jpg'
-import cover11Image from '~/assets/cover11.jpg'
-import cover12Image from '~/assets/cover12.jpg'
-import cover13Image from '~/assets/cover13.jpg'
-import cover14Image from '~/assets/cover14.jpg'
-import cover15Image from '~/assets/cover15.jpg'
+import cover1Image from '~/assets/cover17.jpg'
+import cover2Image from '~/assets/cover16.jpg'
+import cover3Image from '~/assets/cover18.jpg'
+import cover4Image from '~/assets/cover15.jpg'
+import cover5Image from '~/assets/cover19.jpg'
+import cover6Image from '~/assets/cover20.jpg'
+import user2Image from '~/assets/user-10.jpg'
+import user3Image from '~/assets/user-11.jpg'
+import user1Image from '~/assets/user-9.jpg'
 
 const config = {
   nav: ['Home', 'Videos', 'Playlists', 'Channels', 'Discussion', 'About'],
@@ -68,78 +62,16 @@ const config = {
   ],
   recommended: [
     {
-      title: 'Dude You Re Getting A Telescope',
-      duration: '2:40',
-      img: cover7Image,
-      views: '80k',
-      published: '3 days ago',
-      author: 'Gussie French',
+      img: user1Image,
+      name: 'Flora Benson',
     },
     {
-      title: 'The Best Way To Get A Telescope',
-      duration: '3:40',
-      img: cover8Image,
-      views: '180k',
-      published: '3 months ago',
-      author: 'Edward Osborne',
+      img: user2Image,
+      name: 'Violet Cobb',
     },
     {
-      title: 'The Best Way To Get A Telescope',
-      duration: '3:40',
-      img: cover9Image,
-      views: '50k',
-      published: '1 day ago',
-      author: 'Dollie Blair',
-    },
-  ],
-  channel: [
-    {
-      title: 'Astronomy Or Astrology',
-      duration: '3:40',
-      img: cover10Image,
-      views: '50k',
-      published: '1 day ago',
-      author: 'Food & Drink',
-    },
-    {
-      title: 'Advertising Outdoors',
-      duration: '3:40',
-      img: cover11Image,
-      views: '50k',
-      published: '1 day ago',
-      author: 'Food & Drink',
-    },
-    {
-      title: 'Radio Astronomy',
-      duration: '3:40',
-      img: cover12Image,
-      views: '50k',
-      published: '1 day ago',
-      author: 'Dollie Blair',
-    },
-    {
-      title: 'A Good Autoresponder',
-      duration: '3:40',
-      img: cover13Image,
-      views: '50k',
-      published: '1 day ago',
-      author: 'Food & Drink',
-    },
-    {
-      title: 'Baby Monitor Technology',
-      duration: '3:40',
-      img: cover14Image,
-      views: '50k',
-      published: '1 day ago',
-      author: 'Food & Drink',
-    },
-    {
-      title: 'Asteroids',
-      duration: '3:40',
-      img: cover15Image,
-      views: '50k',
-      published: '1 day ago',
-      author: 'Food & Drink',
+      img: user3Image,
+      name: 'Phillip Mullins',
     },
   ],
 }
