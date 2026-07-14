@@ -26,7 +26,7 @@ export const Sidebar = () => {
       <nav className="grid gap-7.5">
         <h2 className="title text-fluid-lg dark:text-white">Subscriptions</h2>
         <ul className="grid gap-6">
-          {config.subscriptions.map((item, i) => (
+          {config.subscriptions.map((item) => (
             <li key={item.label} className="grid grid-cols-[26px_1fr] gap-2.5">
               <Avatar src={item.img} />
               <span>{item.label}</span>

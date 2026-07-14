@@ -33,7 +33,7 @@ export const Home = () => {
       </div>
 
       <div className="col-[content/full] grid auto-cols-[minmax(250px,1fr)] grid-flow-col gap-10 overflow-x-auto pb-4">
-        {config.videos.map((item, i) => (
+        {config.videos.map((item) => (
           <VideoPreview
             author={item.author}
             duration={item.duration}
@@ -70,7 +70,7 @@ export const Home = () => {
       </div>
 
       <div className="col-[content/full] grid auto-cols-[minmax(450px,1fr)] grid-flow-col gap-10 overflow-x-auto pb-4">
-        {config.recommended.map((item, i) => (
+        {config.recommended.map((item) => (
           <VideoPreview
             author={item.author}
             duration={item.duration}
@@ -115,7 +115,7 @@ export const Home = () => {
       </div>
 
       <div className="col-[content/full] grid auto-cols-[minmax(250px,1fr)] grid-flow-col gap-10 overflow-x-auto pb-4">
-        {config.channel.map((item, i) => (
+        {config.channel.map((item) => (
           <VideoPreview
             author={item.author}
             duration={item.duration}
