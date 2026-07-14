@@ -2,7 +2,7 @@ import { createRoot } from 'react-dom/client'
 import { createHashRouter, RouterProvider } from 'react-router'
 import App from './App.tsx'
 import './index.css'
-import { Home } from '~/components'
+import { Home, Profile } from '~/components'
 
 const router = createHashRouter([
   {
@@ -12,6 +12,10 @@ const router = createHashRouter([
       {
         index: true,
         Component: Home,
+      },
+      {
+        Component: Profile,
+        path: '/profile',
       },
     ],
   },

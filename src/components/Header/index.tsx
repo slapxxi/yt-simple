@@ -41,7 +41,8 @@ export const Header = () => {
             >
               <span className="-translate-x-px">3</span>
             </div>
-            <Link to="/user">
+
+            <Link to="/profile">
               <Avatar src={userImage} />
             </Link>
           </div>
