@@ -24,7 +24,10 @@ export const SearchInput: React.FC<SearchInputProps> = (props) => {
         placeholder="Search"
         className="w-full placeholder:text-white/40 focus:outline-none"
       />
-      <SearchIcon data-slot="icon" className="group-has-focus:text-white/40" />
+      <SearchIcon
+        data-slot="icon"
+        className="group-has-focus:text-white/40 w-full"
+      />
     </label>
   )
 }

@@ -10,8 +10,8 @@ import { Avatar, SearchInput } from '~/components'
 export const Header = () => {
   return (
     <header
-      className="sticky top-0 z-10 grid grid-cols-subgrid self-start 
-    bg-xzinc-900/70 py-5 backdrop-blur-lg col-[full]"
+      className="sticky top-0 z-10 grid grid-cols-subgrid self-start bg-white/70
+    dark:bg-xzinc-900/70 py-5 backdrop-blur-lg col-[full]"
     >
       <div className="col-[header] grid grid-cols-subgrid">
         <div className="flex gap-7">

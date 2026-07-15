@@ -15,7 +15,7 @@ export const Sidebar = () => {
       hover:text-white/80 data-[active=true]:text-red-500"
                 data-active={i === 0}
               >
-                <item.Icon />
+                <item.Icon className="w-full" />
                 {item.label}
               </a>
             </li>
@@ -36,7 +36,7 @@ export const Sidebar = () => {
       </nav>
 
       <div className="grid grid-cols-[20px_1fr] items-center gap-4 self-end hover:text-white/80">
-        <SettingsIcon />
+        <SettingsIcon className="w-full" />
         Settings
       </div>
     </aside>
